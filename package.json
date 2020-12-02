@@ -1,6 +1,6 @@
 {
   "name": "symfony-form-collection-add",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple package to handle __name__ in data-prototype",
   "main": "index.js",
   "repository": {

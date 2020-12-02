@@ -6,11 +6,59 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>symfony-form-collection-add</title>
+    <script src="jquery.min.js"></script>
 </head>
 <body>
+
+<div id="entity_cat"
+     data-prototype="<fieldset class=&quot;form-group&quot;><legend class=&quot;col-form-label required&quot;>__name__label__</legend><div id=&quot;entity_cat___name__&quot;><div class=&quot;col-12 form-group&quot;><input type=&quot;text&quot; id=&quot;entity_cat___name___class&quot; name=&quot;entity[cat][__name__][class]&quot; required=&quot;required&quot; autocomplete=&quot;off&quot; class=&quot;classSection form-control&quot; /></div><div class=&quot;col-12 form-group&quot;><textarea id=&quot;entity_cat___name___field&quot; name=&quot;entity[cat][__name__][field]&quot; class=&quot;form-control&quot;></textarea></div><fieldset class=&quot;form-group&quot;><div id=&quot;entity_cat___name___subGroup&quot; class=&quot;collection row&quot; data-prototype=&quot;&amp;lt;fieldset class=&amp;quot;form-group&amp;quot;&amp;gt;&amp;lt;legend class=&amp;quot;col-form-label required&amp;quot;&amp;gt;__name__label__&amp;lt;/legend&amp;gt;&amp;lt;div id=&amp;quot;entity_cat___name___subGroup___name__&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;col-12 form-group&amp;quot;&amp;gt;&amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;entity_cat___name___subGroup___name___class&amp;quot; name=&amp;quot;entity[cat][__name__][subGroup][__name__][class]&amp;quot; required=&amp;quot;required&amp;quot; autocomplete=&amp;quot;off&amp;quot; class=&amp;quot;classSection form-control&amp;quot; /&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;col-12 form-group&amp;quot;&amp;gt;&amp;lt;textarea id=&amp;quot;entity_cat___name___subGroup___name___field&amp;quot; name=&amp;quot;entity[cat][__name__][subGroup][__name__][field]&amp;quot; class=&amp;quot;form-control&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;fieldset class=&amp;quot;form-group&amp;quot;&amp;gt;&amp;lt;div id=&amp;quot;entity_cat___name___subGroup___name___subGroup&amp;quot; class=&amp;quot;collection row&amp;quot; data-prototype=&amp;quot;&amp;amp;lt;fieldset class=&amp;amp;quot;form-group&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;legend class=&amp;amp;quot;col-form-label required&amp;amp;quot;&amp;amp;gt;__name__label__&amp;amp;lt;/legend&amp;amp;gt;&amp;amp;lt;div id=&amp;amp;quot;entity_cat___name___subGroup___name___subGroup___name__&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;div class=&amp;amp;quot;col-12 form-group&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;input type=&amp;amp;quot;text&amp;amp;quot; id=&amp;amp;quot;entity_cat___name___subGroup___name___subGroup___name___class&amp;amp;quot; name=&amp;amp;quot;entity[cat][__name__][subGroup][__name__][subGroup][__name__][class]&amp;amp;quot; required=&amp;amp;quot;required&amp;amp;quot; autocomplete=&amp;amp;quot;off&amp;amp;quot; class=&amp;amp;quot;classSection form-control&amp;amp;quot; /&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;&amp;amp;lt;div class=&amp;amp;quot;col-12 form-group&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;textarea id=&amp;amp;quot;entity_cat___name___subGroup___name___subGroup___name___field&amp;amp;quot; name=&amp;amp;quot;entity[cat][__name__][subGroup][__name__][subGroup][__name__][field]&amp;amp;quot; class=&amp;amp;quot;form-control&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/textarea&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;&amp;amp;lt;/fieldset&amp;amp;gt;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/fieldset&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/fieldset&amp;gt;&quot;></div></fieldset></div></fieldset>"></div>
+
 <script src="../dist/symfony-form-collection-add.js"></script>
 <script>
-    symfonyFormCollectionAdd();
+    async function timeout(time) {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve();
+            }, time)
+        })
+    }
+
+    // you need to find an index by your self
+    async function demo() {
+        await timeout(500);
+        const prototype0 = symfonyFormCollectionAdd('#entity_cat', 0, 'Riri');
+        $('#entity_cat').append(prototype0);
+
+            await timeout(500);
+            const prototype0_0 = symfonyFormCollectionAdd('#entity_cat_0_subGroup', 0, 'Sub Riri');
+            $('#entity_cat_0_subGroup').append(prototype0_0);
+
+                await timeout(500);
+                const prototype0_0_0 = symfonyFormCollectionAdd('#entity_cat_0_subGroup_0_subGroup', 0, 'Sub sub Riri');
+                $('#entity_cat_0_subGroup_0_subGroup').append(prototype0_0_0);
+
+                await timeout(500);
+                const prototype0_0_1 = symfonyFormCollectionAdd('#entity_cat_0_subGroup_0_subGroup', 1, 'Sub sub Riri');
+                $('#entity_cat_0_subGroup_0_subGroup').append(prototype0_0_1);
+
+                await timeout(500);
+                const prototype0_0_2 = symfonyFormCollectionAdd('#entity_cat_0_subGroup_0_subGroup', 2, 'Sub sub Riri');
+                $('#entity_cat_0_subGroup_0_subGroup').append(prototype0_0_2);
+
+            await timeout(500);
+            const prototype0_1 = symfonyFormCollectionAdd('#entity_cat_0_subGroup', 1, 'Sub Riri');
+            $('#entity_cat_0_subGroup').append(prototype0_1);
+
+        await timeout(500);
+        const prototype1 = symfonyFormCollectionAdd('#entity_cat', 1, 'Riri');
+        $('#entity_cat').append(prototype1);
+
+            await timeout(500);
+            const prototype1_0 = symfonyFormCollectionAdd('#entity_cat_1_subGroup', 0, 'Sub Riri');
+            $('#entity_cat_1_subGroup').append(prototype1_0);
+    }
+
+    demo();
 </script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "symfony-form-collection-add",
+  "version": "0.0.1",
+  "description": "A simple package to handle __name__ in data-prototype",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Lenny4/symfony-form-collection-add"
+  },
+  "author": "Alexandre Beaujour",
+  "license": "MIT",
+  "scripts": {
+    "build": "mkdir -p dist && browserify -t browserify-css index.js -s symfonyFormCollectionAdd -o dist/symfony-form-collection-add.js"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "browserify-css": "^0.15.0"
+  }
+}

@@ -1,9 +1,4 @@
 # Installation
-```bash
-$ npm install
-$ npm run build
-```
 
-- Open examples/index.html in a browser
-- Open console in the browser, you should see 'todo'
-# symfony-form-collection-add
+# Compatible
+- v1.x: Symfony 4, Symfony 5

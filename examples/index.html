@@ -23,38 +23,37 @@
         })
     }
 
-    // you need to find an index by your self
     async function demo() {
         await timeout(500);
-        const prototype0 = symfonyFormCollectionAdd('#entity_cat', 0, 'Riri');
+        const prototype0 = symfonyFormCollectionAdd('#entity_cat', 'Riri', true);
         $('#entity_cat').append(prototype0);
 
             await timeout(500);
-            const prototype0_0 = symfonyFormCollectionAdd('#entity_cat_0_subGroup', 0, 'Sub Riri');
+            const prototype0_0 = symfonyFormCollectionAdd('#entity_cat_0_subGroup', 'Sub Riri (no index)', false);
             $('#entity_cat_0_subGroup').append(prototype0_0);
 
                 await timeout(500);
-                const prototype0_0_0 = symfonyFormCollectionAdd('#entity_cat_0_subGroup_0_subGroup', 0, 'Sub sub Riri');
+                const prototype0_0_0 = symfonyFormCollectionAdd('#entity_cat_0_subGroup_0_subGroup', 'Sub sub Riri', true);
                 $('#entity_cat_0_subGroup_0_subGroup').append(prototype0_0_0);
 
                 await timeout(500);
-                const prototype0_0_1 = symfonyFormCollectionAdd('#entity_cat_0_subGroup_0_subGroup', 1, 'Sub sub Riri');
+                const prototype0_0_1 = symfonyFormCollectionAdd('#entity_cat_0_subGroup_0_subGroup', 'Sub sub Riri (no index)', false);
                 $('#entity_cat_0_subGroup_0_subGroup').append(prototype0_0_1);
 
                 await timeout(500);
-                const prototype0_0_2 = symfonyFormCollectionAdd('#entity_cat_0_subGroup_0_subGroup', 2, 'Sub sub Riri');
+                const prototype0_0_2 = symfonyFormCollectionAdd('#entity_cat_0_subGroup_0_subGroup', 'Sub sub Riri', true);
                 $('#entity_cat_0_subGroup_0_subGroup').append(prototype0_0_2);
 
             await timeout(500);
-            const prototype0_1 = symfonyFormCollectionAdd('#entity_cat_0_subGroup', 1, 'Sub Riri');
+            const prototype0_1 = symfonyFormCollectionAdd('#entity_cat_0_subGroup', 'Sub Riri', true);
             $('#entity_cat_0_subGroup').append(prototype0_1);
 
         await timeout(500);
-        const prototype1 = symfonyFormCollectionAdd('#entity_cat', 1, 'Riri');
+        const prototype1 = symfonyFormCollectionAdd('#entity_cat', 'Riri (no index)', false);
         $('#entity_cat').append(prototype1);
 
             await timeout(500);
-            const prototype1_0 = symfonyFormCollectionAdd('#entity_cat_1_subGroup', 0, 'Sub Riri');
+            const prototype1_0 = symfonyFormCollectionAdd('#entity_cat_1_subGroup', 'Sub Riri', true);
             $('#entity_cat_1_subGroup').append(prototype1_0);
     }
 
